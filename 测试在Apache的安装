@@ -1,0 +1,4 @@
+在xshell中执行命令：echo "3.115.116.193" >/var/www/html/index.html
+切换文件夹目录：cd /var/www/html
+查看文件：ls
+打开浏览器输入IP地址，如果网页上出现3.115.116.193则Apache安装成功
