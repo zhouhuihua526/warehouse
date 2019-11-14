@@ -1,3 +1,20 @@
 https://blog.csdn.net/yuxinshuier/article/details/80266209
 第五步也可以使用xshell建立连接
 重要的第六步命令。
+
+安装Apache步骤（linux系统的RedHat系列，非Ubuntu）：
+sudo yum update
+sudo yum install gcc gcc-c++ make
+sudo yum install apache mysql php 
+php-mysql mysql-server
+检查Apache是否安装成功：
+apachectl -v
+httpd -v
+启动apache web服务：
+sudo service httpd start
+sudo service httpd restart 重新启动
+sudo service httpd stop 停止服务
+通过命令 sudo -s 可以实现从普通用户转为root用户
+通过 exit 可以从root用户退回到普通用户
+在index.html中输出“3.115.116.193”：
+echo "3.115.116.193" >/var/www/html/index.html
